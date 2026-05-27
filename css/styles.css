@@ -13856,3 +13856,203 @@ html {
     z-index: 1;
     opacity: 0.85;
 }
+
+.weekly-member-order-note {
+    color: #6c757d;
+    font-size: 0.86rem;
+    line-height: 1.5;
+}
+
+.weekly-filter-panel {
+    background: #f8f9fa;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 0.75rem;
+    display: grid;
+    gap: 0.85rem 1.25rem;
+    grid-template-columns: minmax(0, 1fr) auto;
+    padding: 1rem 1.15rem 1.1rem;
+}
+
+.weekly-filter-options {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.25rem;
+    grid-column: 1 / -1;
+}
+
+.weekly-filter-group {
+    align-items: center;
+    display: flex;
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+    gap: 0.42rem;
+    row-gap: 0.48rem;
+}
+
+.weekly-filter-label {
+    color: #495057;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    margin-right: 0.25rem;
+    text-transform: uppercase;
+}
+
+.weekly-admin-filter {
+    align-items: center;
+    color: #343a40;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 0.85rem;
+    font-weight: 800;
+    gap: 0.42rem;
+    line-height: 1;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.weekly-admin-filter input {
+    accent-color: #1e3ef3;
+    height: 1rem;
+    margin: 0;
+    width: 1rem;
+}
+
+.weekly-filter-btn {
+    background: #fff;
+    border: 1px solid rgba(30, 62, 243, 0.18);
+    border-radius: 999px;
+    color: #343a40;
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1;
+    padding: 0.48rem 0.62rem;
+}
+
+.weekly-filter-btn:hover,
+.weekly-filter-btn.active {
+    background: #1e3ef3;
+    border-color: #1e3ef3;
+    color: #fff;
+}
+
+.weekly-filter-clear {
+    align-self: center;
+    background: transparent;
+    border: 0;
+    color: #6c757d;
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1;
+    padding: 0.4rem 0;
+    text-decoration: underline;
+    text-underline-offset: 0.16em;
+    white-space: nowrap;
+}
+
+.weekly-filter-clear:hover {
+    color: #495057;
+}
+
+.weekly-member-card {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(33, 37, 41, 0.06);
+    flex: 0 0 auto;
+    min-height: 100%;
+    padding: 1.35rem;
+    text-align: center;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .weekly-member-card {
+        width: calc(50% - 0.75rem);
+    }
+}
+
+@media (min-width: 1200px) {
+    .weekly-member-card {
+        width: calc(33.333% - 1rem);
+    }
+}
+
+.weekly-member-card[hidden] {
+    display: none;
+}
+
+.weekly-member-photo-link {
+    display: inline-block;
+}
+
+.weekly-member-card img {
+    border-radius: 50%;
+    height: 150px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    width: 150px;
+}
+
+.weekly-member-card h5 {
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 0.35rem;
+}
+
+.weekly-member-card h5 a {
+    color: #212529;
+    text-decoration: none;
+}
+
+.weekly-member-card h5 a:hover {
+    color: #1e3ef3;
+}
+
+.weekly-member-card p {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 0.85rem;
+    min-height: 2.7rem;
+}
+
+.weekly-member-card .weekly-member-pronouns {
+    color: #495057;
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.25rem;
+    min-height: 0;
+}
+
+.weekly-member-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    justify-content: center;
+}
+
+.weekly-badge {
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 800;
+    line-height: 1;
+    padding: 0.42rem 0.55rem;
+    white-space: nowrap;
+}
+
+.badge-admin {
+    background: #212529;
+    color: #fff;
+}
+
+.badge-workshop {
+    background: rgba(126, 30, 243, 0.11);
+    color: #5f18ba;
+}
+
+.badge-exchange {
+    background: rgba(30, 62, 243, 0.1);
+    color: #1e3ef3;
+}
