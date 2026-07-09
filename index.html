@@ -43,11 +43,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                         <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="weekly.html">Weekly Exchange</a></li>
                         <li class="nav-item"><a class="nav-link" href="cscw2024.html">@CSCW2024</a></li>
                         <li class="nav-item"><a class="nav-link" href="cscw2025.html">@CSCW2025</a></li>
                          <li class="nav-item"><a class="nav-link" href="cscw2026.html" target="_blank">@CSCW2026</a></li>
-                        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
                     </ul>
                 </div>
             </div>
@@ -130,6 +128,464 @@
                         </div>
                     </div>
                 </section>
+
+                <!-- Weekly Exchange Section-->
+                <section id="weekly-exchange">
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <h2 class="text-primary fw-bolder mb-0">Weekly Exchange</h2>
+                    </div>
+                    <div class="card shadow border-0 rounded-4 mb-5">
+                        <div class="card-body p-5">
+                            <div class="row align-items-center gx-5">
+                                <div class="col-lg-12">
+                                    <div>
+                                        The Weekly Exchange is a 50-minute gathering for PhD students across
+                                        institutions to connect, share, and support one another. Each week, one member
+                                        leads a session. Sometimes they present ongoing research or invite feedback;
+                                        other times they share something they care about outside of academia. Whether
+                                        it's a deep dive into a social computing project or an exploration of creative
+                                        passions, these sessions help us build trust, surface insights, and reimagine
+                                        what it means to grow together in research.
+                                        <br><br>
+                                        Over time, these informal exchanges have become the foundation for workshops and
+                                        collaborations within Positech. In many ways, we see the exchange itself as an
+                                        open-ended exploration. <em>What does it mean to build a loosely connected but
+                                            consistent, low-stakes yet meaningfully engaged research community? How can
+                                            it
+                                            support the kind of work and life we're trying to cultivate as social
+                                            computing researchers?</em>
+                                        <br><br>
+                                        If you're interested in joining, feel free to reach out at
+                                        <a href="mailto:positech.research@gmail.com">positech.research@gmail.com</a>
+                                        with a short note about who you are, what you're
+                                        working on, and how it relates to the broader themes Positech is thinking about.
+                                        To help keep the group aligned and grounded, new members are brought in by
+                                        consensus. Usually, that means having a personal connection with someone already
+                                        in the group, often through participating in a Positech workshop. This helps us
+                                        keep the space intentional and supportive as it evolves!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Members Section-->
+                <section id="weekly-members">
+                    <div class="mb-4">
+                        <h2 class="text-primary fw-bolder mb-2">Members</h2>
+                        <p class="weekly-member-order-note mb-0">Listed by recent Positech participation, with current admins first.</p>
+                    </div>
+                    <div class="card shadow border-0 rounded-4 mb-5">
+                        <div class="card-body p-4 p-lg-5">
+                            <div class="weekly-filter-panel mb-5" aria-label="Member filters">
+                                <div class="weekly-filter-group">
+                                    <label class="weekly-admin-filter">
+                                        <input type="checkbox" data-filter="current-admins">
+                                        <span>Current admins</span>
+                                    </label>
+                                </div>
+                                <div class="weekly-filter-options">
+                                    <div class="weekly-filter-group">
+                                        <span class="weekly-filter-label">Weekly Exchange</span>
+                                        <button class="weekly-filter-btn" type="button" data-filter-group="weekly"
+                                            data-filter="weekly-2026">
+                                            2026
+                                        </button>
+                                        <button class="weekly-filter-btn" type="button" data-filter-group="weekly"
+                                            data-filter="weekly-2025">
+                                            2025
+                                        </button>
+                                        <button class="weekly-filter-btn" type="button" data-filter-group="weekly"
+                                            data-filter="weekly-2024">
+                                            2024
+                                        </button>
+                                        <button class="weekly-filter-btn" type="button" data-filter-group="weekly"
+                                            data-filter="weekly-2023">
+                                            2023
+                                        </button>
+                                    </div>
+                                    <div class="weekly-filter-group">
+                                        <span class="weekly-filter-label">Workshop Organizer</span>
+                                        <button class="weekly-filter-btn" type="button" data-filter-group="organized"
+                                            data-filter="organized-2026">
+                                            2026
+                                        </button>
+                                        <button class="weekly-filter-btn" type="button" data-filter-group="organized"
+                                            data-filter="organized-2025">
+                                            2025
+                                        </button>
+                                        <button class="weekly-filter-btn" type="button" data-filter-group="organized"
+                                            data-filter="organized-2024">
+                                            2024
+                                        </button>
+                                    </div>
+                                    <button class="weekly-filter-clear" id="weeklyFilterClear" type="button">
+                                        Clear filters
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="row g-4" id="weeklyMemberGrid">
+                                <article class="weekly-member-card" data-name="jaewon"
+                                    data-tags="current-admins weekly-2023 weekly-2024 weekly-2025 weekly-2026 organized-2024 organized-2025 organized-2026">
+                                    <a href="https://jaewonkim.me/" class="weekly-member-photo-link" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <img src="assets/kim.jpg" alt="JaeWon Kim">
+                                    </a>
+                                    <h5><a href="https://jaewonkim.me/" target="_blank"
+                                            rel="noopener noreferrer">JaeWon Kim</a></h5>
+                                    <p class="weekly-member-pronouns">(she/her)</p>
+                                    <p>University of Washington</p>
+                                    <div class="weekly-member-badges">
+                                        <span class="weekly-badge badge-admin">Current Admin</span>
+                                        <span class="weekly-badge badge-workshop">Organizer 2026</span>
+                                        <span class="weekly-badge badge-workshop">Organizer 2025</span>
+                                        <span class="weekly-badge badge-workshop">Organizer 2024</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2026</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2025</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2024</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2023</span>
+                                    </div>
+                                </article>
+
+                                <article class="weekly-member-card" data-name="lindsay"
+                                    data-tags="current-admins weekly-2023 weekly-2024 weekly-2025 weekly-2026 organized-2024 organized-2025 organized-2026">
+                                    <a href="https://lipopowski.github.io/" class="weekly-member-photo-link"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <img src="assets/popowski.jpg" alt="Lindsay Popowski">
+                                    </a>
+                                    <h5><a href="https://lipopowski.github.io/" target="_blank"
+                                            rel="noopener noreferrer">Lindsay Popowski</a></h5>
+                                    <p class="weekly-member-pronouns">(she/her)</p>
+                                    <p>Stanford University</p>
+                                    <div class="weekly-member-badges">
+                                        <span class="weekly-badge badge-admin">Current Admin</span>
+                                        <span class="weekly-badge badge-workshop">Organizer 2026</span>
+                                        <span class="weekly-badge badge-workshop">Organizer 2025</span>
+                                        <span class="weekly-badge badge-workshop">Organizer 2024</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2026</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2025</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2024</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2023</span>
+                                    </div>
+                                </article>
+
+                                <article class="weekly-member-card" data-name="louisa"
+                                    data-tags="current-admins weekly-2025 weekly-2026 organized-2026">
+                                    <a href="https://louisaconwill.github.io/" class="weekly-member-photo-link"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <img src="assets/louisaconwill.jpg" alt="Louisa Conwill">
+                                    </a>
+                                    <h5><a href="https://louisaconwill.github.io/" target="_blank"
+                                            rel="noopener noreferrer">Louisa Conwill</a></h5>
+                                    <p class="weekly-member-pronouns">(she/her)</p>
+                                    <p>University of Notre Dame</p>
+                                    <div class="weekly-member-badges">
+                                        <span class="weekly-badge badge-admin">Current Admin</span>
+                                        <span class="weekly-badge badge-workshop">Organizer 2026</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2026</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2025</span>
+                                    </div>
+                                </article>
+
+                                <article class="weekly-member-card" data-name="lizzie"
+                                    data-tags="current-admins weekly-2026 organized-2026">
+                                    <a href="https://elizabethkli.github.io/" class="weekly-member-photo-link"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <img src="assets/elizabethli.jpg" alt="Elizabeth &quot;Lizzie&quot; Li">
+                                    </a>
+                                    <h5><a href="https://elizabethkli.github.io/" target="_blank"
+                                            rel="noopener noreferrer">Elizabeth "Lizzie" Li</a></h5>
+                                    <p class="weekly-member-pronouns">(she/her)</p>
+                                    <p>Northwestern University</p>
+                                    <div class="weekly-member-badges">
+                                        <span class="weekly-badge badge-admin">Current Admin</span>
+                                        <span class="weekly-badge badge-workshop">Organizer 2026</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2026</span>
+                                    </div>
+                                </article>
+
+                                <article class="weekly-member-card" data-name="meryl"
+                                    data-tags="current-admins weekly-2026 organized-2026">
+                                    <a href="https://merylye.github.io/" class="weekly-member-photo-link"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <img src="assets/merylye.jpg" alt="Meryl Ye">
+                                    </a>
+                                    <h5><a href="https://merylye.github.io/" target="_blank"
+                                            rel="noopener noreferrer">Meryl Ye</a></h5>
+                                    <p class="weekly-member-pronouns">(she/her)</p>
+                                    <p>Carnegie Mellon University</p>
+                                    <div class="weekly-member-badges">
+                                        <span class="weekly-badge badge-admin">Current Admin</span>
+                                        <span class="weekly-badge badge-workshop">Organizer 2026</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2026</span>
+                                    </div>
+                                </article>
+
+                                <article class="weekly-member-card" data-name="jose"
+                                    data-tags="weekly-2026 organized-2026">
+                                    <a href="https://jaguridi.github.io/index.html" class="weekly-member-photo-link"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <img src="assets/joseguridi.png" alt="Jose A. Guridi">
+                                    </a>
+                                    <h5><a href="https://jaguridi.github.io/index.html" target="_blank"
+                                            rel="noopener noreferrer">Jose A. Guridi</a></h5>
+                                    <p class="weekly-member-pronouns">(he/him)</p>
+                                    <p>Cornell University</p>
+                                    <div class="weekly-member-badges">
+                                        <span class="weekly-badge badge-workshop">Organizer 2026</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2026</span>
+                                    </div>
+                                </article>
+
+                                <article class="weekly-member-card" data-name="lizzy"
+                                    data-tags="weekly-2025 weekly-2026 organized-2025 organized-2026">
+                                    <a href="https://liulizzy672.wixsite.com/website" class="weekly-member-photo-link"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <img src="assets/jiayinglizzyliu.jpg" alt="Jiaying &quot;Lizzy&quot; Liu">
+                                    </a>
+                                    <h5><a href="https://liulizzy672.wixsite.com/website" target="_blank"
+                                            rel="noopener noreferrer">Jiaying "Lizzy" Liu</a></h5>
+                                    <p class="weekly-member-pronouns">(she/her)</p>
+                                    <p>University of Texas at Austin</p>
+                                    <div class="weekly-member-badges">
+                                        <span class="weekly-badge badge-workshop">Organizer 2026</span>
+                                        <span class="weekly-badge badge-workshop">Organizer 2025</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2026</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2025</span>
+                                    </div>
+                                </article>
+
+                                <article class="weekly-member-card" data-name="theia"
+                                    data-tags="weekly-2026 organized-2026">
+                                    <a href="https://people.csail.mit.edu/theia/" class="weekly-member-photo-link"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <img src="assets/theiahenderson.jpg" alt="Theia Henderson">
+                                    </a>
+                                    <h5><a href="https://people.csail.mit.edu/theia/" target="_blank"
+                                            rel="noopener noreferrer">Theia Henderson</a></h5>
+                                    <p class="weekly-member-pronouns">(she/her)</p>
+                                    <p>MIT CSAIL</p>
+                                    <div class="weekly-member-badges">
+                                        <span class="weekly-badge badge-workshop">Organizer 2026</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2026</span>
+                                    </div>
+                                </article>
+
+                                <article class="weekly-member-card" data-name="bingxu"
+                                    data-tags="weekly-2025 weekly-2026 organized-2026">
+                                    <a href="https://www.linkedin.com/in/bingxu-han-067b94204/"
+                                        class="weekly-member-photo-link" target="_blank" rel="noopener noreferrer">
+                                        <img src="assets/bingxuhan.jpg" alt="Bingxu Han">
+                                    </a>
+                                    <h5><a href="https://www.linkedin.com/in/bingxu-han-067b94204/" target="_blank"
+                                            rel="noopener noreferrer">Bingxu Han</a></h5>
+                                    <p class="weekly-member-pronouns">(she/her)</p>
+                                    <p>Stanford University</p>
+                                    <div class="weekly-member-badges">
+                                        <span class="weekly-badge badge-workshop">Organizer 2026</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2026</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2025</span>
+                                    </div>
+                                </article>
+
+                                <article class="weekly-member-card" data-name="cassidy"
+                                    data-tags="weekly-2023 weekly-2024 weekly-2025 organized-2024 organized-2025">
+                                    <a href="https://www.cassidypyle.com/" class="weekly-member-photo-link"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <img src="assets/pyle.jpg" alt="Cassidy Pyle">
+                                    </a>
+                                    <h5><a href="https://www.cassidypyle.com/" target="_blank"
+                                            rel="noopener noreferrer">Cassidy Pyle</a></h5>
+                                    <p class="weekly-member-pronouns">(she/her)</p>
+                                    <p>University of Michigan</p>
+                                    <div class="weekly-member-badges">
+                                        <span class="weekly-badge badge-workshop">Organizer 2025</span>
+                                        <span class="weekly-badge badge-workshop">Organizer 2024</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2025</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2024</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2023</span>
+                                    </div>
+                                </article>
+
+                                <article class="weekly-member-card" data-name="angela"
+                                    data-tags="weekly-2024 weekly-2025 organized-2024">
+                                    <a href="https://scholar.google.com/citations?user=M2_aedQAAAAJ&hl=en"
+                                        class="weekly-member-photo-link" target="_blank" rel="noopener noreferrer">
+                                        <img src="assets/lee.jpg" alt="Angela Y. Lee">
+                                    </a>
+                                    <h5><a href="https://scholar.google.com/citations?user=M2_aedQAAAAJ&hl=en"
+                                            target="_blank" rel="noopener noreferrer">Angela Y. Lee</a></h5>
+                                    <p class="weekly-member-pronouns">(she/her)</p>
+                                    <p>Stanford University</p>
+                                    <div class="weekly-member-badges">
+                                        <span class="weekly-badge badge-workshop">Organizer 2024</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2025</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2024</span>
+                                    </div>
+                                </article>
+
+                                <article class="weekly-member-card" data-name="anna"
+                                    data-tags="weekly-2024 weekly-2025 organized-2024">
+                                    <a href="https://annamfang.com/" class="weekly-member-photo-link" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <img src="assets/fang.jpg" alt="Anna Fang">
+                                    </a>
+                                    <h5><a href="https://annamfang.com/" target="_blank"
+                                            rel="noopener noreferrer">Anna Fang</a></h5>
+                                    <p class="weekly-member-pronouns">(she/her)</p>
+                                    <p>Carnegie Mellon University</p>
+                                    <div class="weekly-member-badges">
+                                        <span class="weekly-badge badge-workshop">Organizer 2024</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2025</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2024</span>
+                                    </div>
+                                </article>
+
+                                <article class="weekly-member-card" data-name="shanley"
+                                    data-tags="weekly-2023 weekly-2024">
+                                    <a href="https://www.shanleycorvite.me/" class="weekly-member-photo-link"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <img src="assets/shanleycorvite.jpeg" alt="Shanley Corvite">
+                                    </a>
+                                    <h5><a href="https://www.shanleycorvite.me/" target="_blank"
+                                            rel="noopener noreferrer">Shanley Corvite</a></h5>
+                                    <p class="weekly-member-pronouns">(she/her)</p>
+                                    <p>University of Michigan</p>
+                                    <div class="weekly-member-badges">
+                                        <span class="weekly-badge badge-exchange">Weekly 2024</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2023</span>
+                                    </div>
+                                </article>
+
+                                <article class="weekly-member-card" data-name="jina"
+                                    data-tags="weekly-2023 weekly-2024">
+                                    <a href="https://x.com/jinayoon_" class="weekly-member-photo-link" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <img src="assets/jinayoon.jpeg" alt="Jina Yoon">
+                                    </a>
+                                    <h5><a href="https://x.com/jinayoon_" target="_blank"
+                                            rel="noopener noreferrer">Jina Yoon</a></h5>
+                                    <p class="weekly-member-pronouns">(she/her)</p>
+                                    <p>University of Washington</p>
+                                    <div class="weekly-member-badges">
+                                        <span class="weekly-badge badge-exchange">Weekly 2024</span>
+                                        <span class="weekly-badge badge-exchange">Weekly 2023</span>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Resources Section -->
+                <section id="resources">
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <h2 class="text-primary fw-bolder mb-0">Resources</h2>
+                    </div>
+                    <div class="card shadow border-0 rounded-4 mb-5">
+                        <div class="card-body p-5">
+                            <div class="row align-items-center gx-5">
+                                <div class="col-lg-12">
+                                    <div>
+                                        <h4 class="text-secondary fw-bolder">Proposals</h4>
+                                        <ul>
+                                            <li>
+                                                JaeWon Kim*, Lindsay Popowski*, Anna Fang, Cassidy Pyle, Guo Freeman,
+                                                Ryan
+                                                M. Kelly, Angela Y. Lee, Fannie Liu, Angela D. R. Smith, Alexandra To,
+                                                and Amy X. Zhang. 2024. <a
+                                                    href="https://dl.acm.org/doi/10.1145/3678884.3681833"
+                                                    target="_blank"><strong>Envisioning New Futures of Positive
+                                                        Social Technology: Beyond Paradigms of Fixing, Protecting, and
+                                                        Preventing.</strong></a> In Companion Publication of the 2024
+                                                Conference on Computer-Supported Cooperative Work and Social Computing,
+                                                701–704.
+                                            </li>
+                                            <li>
+                                                JaeWon Kim, Jiaying "Lizzy" Liu, Lindsay Popowski, Cassidy Pyle, Sowmya
+                                                Somanath, Hua Shen, Casey Fiesler, Gillian R. Hayes, Alexis Hiniker,
+                                                Wendy Ju, Florian "Floyd" Mueller, Ahmer Arif, and Yasmine Kotturi.
+                                                2025. <a
+                                                    href="https://dl.acm.org/doi/10.1145/3715070.3748287"
+                                                    target="_blank"><strong>Design for Hope: Cultivating Deliberate Hope
+                                                        in the Face of Complex Societal Challenges.</strong></a> In
+                                                Companion Publication of the 2025 Conference on Computer-Supported
+                                                Cooperative Work and Social Computing, 112–115.
+                                            </li>
+                                            <li>
+                                                JaeWon Kim, Aayushi Dangol, Rotem Landesman, Alexis Hiniker, and McKenna
+                                                F. Parnes. 2026. <a
+                                                    href="https://sustainable-care-idc.github.io/assets/proposal.pdf"
+                                                    target="_blank"><strong>Sustainable Care: Designing Technologies
+                                                        That Support Children's Long-Term Engagement with Social
+                                                        Issues.</strong></a> Workshop at the 2026 ACM Interaction Design
+                                                and Children Conference (IDC '26; withdrawn).
+                                            </li>
+                                            <li>
+                                                JaeWon Kim, Lindsay Popowski, Louisa Conwill, Elizabeth 'Lizzie' Li,
+                                                Meryl Ye, Jiaying 'Lizzy' Liu, Jose A. Guridi, Theia Henderson, Bingxu
+                                                Han, Dennis Wang, Angel Hsing-Chi Hwang, Susan Wyche, Yasmine Kotturi,
+                                                Gillian R. Hayes, and Angela D. R. Smith. 2026. <a
+                                                    href="https://arxiv.org/abs/2605.05651"
+                                                    target="_blank"><strong>The Capacity to Care: Designing Social
+                                                        Technology for Sustained Engagement With Societal
+                                                        Challenges.</strong></a>
+                                            </li>
+                                        </ul>
+                                        <br>
+                                        <hr><br>
+                                        <h4 class="text-secondary fw-bolder">Selected Submissions</h4>
+                                        <ul>
+                                            <li>
+                                                Casey Fiesler, <strong>The Internet is Bad for You. The Internet is Good
+                                                    for You.</strong> (submission for CSCW2024 workshop) <a
+                                                    href="assets/casey_submission.pdf" target="_blank">[Link to
+                                                    Article]</a>
+                                            </li>
+                                            <li>
+                                                Miranda Wei, <strong>Reflections on Sociotechnical Harms for
+                                                    Positech.</strong> (submission for CSCW2024 workshop) <a
+                                                    href="assets/miranda_submission.pdf" target="_blank">[Link to
+                                                    Article]</a>
+                                            </li>
+                                            <br>
+                                            <p>(To be updated)</p>
+                                        </ul>
+                                        <br>
+                                        <hr><br>
+                                        <h4 class="text-secondary fw-bolder mb-4">Reading List (Live Doc)</h4>
+                                        <iframe
+                                            src="https://docs.google.com/document/d/1pVqObADhd0rKsSRzRqRbxBZaHcWwm92NNmv8MJjbRzU/preview"
+                                            width="100%" height="600px" style="border: none;">
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Discord -->
+                <!-- <section id="discord">
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <h2 class="text-secondary fw-bolder mb-0">Discord Server</h2>
+                    </div>
+                    <div class="card shadow border-0 rounded-4 mb-5">
+                        <div class="card-body p-5">
+                            <div class="row align-items-center gx-5">
+                                <div class="col-lg-12">
+                                    <div>
+                                        <a href="https://discord.gg/WNMrR9KT"
+                                            target="_blank">https://discord.gg/WNMrR9KT</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
             </div>
         </div>
     </div>
@@ -149,6 +605,56 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+        const weeklyFilterButtons = document.querySelectorAll(".weekly-filter-btn");
+        const weeklyAdminFilter = document.querySelector('[data-filter="current-admins"]');
+        const weeklyFilterClear = document.getElementById("weeklyFilterClear");
+        const weeklyMemberCards = document.querySelectorAll(".weekly-member-card");
+
+        function applyWeeklyMemberFilter() {
+            const selectedWeeklyFilters = Array.from(weeklyFilterButtons)
+                .filter((button) => button.dataset.filterGroup === "weekly" && button.classList.contains("active"))
+                .map((button) => button.dataset.filter);
+            const selectedOrganizerFilters = Array.from(weeklyFilterButtons)
+                .filter((button) => button.dataset.filterGroup === "organized" && button.classList.contains("active"))
+                .map((button) => button.dataset.filter);
+            const adminOnly = weeklyAdminFilter && weeklyAdminFilter.checked;
+
+            weeklyMemberCards.forEach((card) => {
+                const cardTags = (card.dataset.tags || "").split(/\s+/);
+                const tags = cardTags;
+                const matchesAdmin = !adminOnly || tags.includes("current-admins");
+                const matchesWeekly = selectedWeeklyFilters.length === 0 ||
+                    selectedWeeklyFilters.some((filter) => tags.includes(filter));
+                const matchesOrganizer = selectedOrganizerFilters.length === 0 ||
+                    selectedOrganizerFilters.some((filter) => tags.includes(filter));
+                const isVisible = matchesAdmin && matchesWeekly && matchesOrganizer;
+                card.hidden = !isVisible;
+            });
+        }
+
+        weeklyFilterButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                button.classList.toggle("active");
+                applyWeeklyMemberFilter();
+            });
+        });
+
+        if (weeklyAdminFilter) {
+            weeklyAdminFilter.addEventListener("change", applyWeeklyMemberFilter);
+        }
+
+        if (weeklyFilterClear) {
+            weeklyFilterClear.addEventListener("click", () => {
+                weeklyFilterButtons.forEach((button) => button.classList.remove("active"));
+                if (weeklyAdminFilter) {
+                    weeklyAdminFilter.checked = false;
+                }
+                applyWeeklyMemberFilter();
+            });
+        }
+
+        applyWeeklyMemberFilter();
+
         window.onscroll = function () { scrollFunction() };
 
         function scrollFunction() {
