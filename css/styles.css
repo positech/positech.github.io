@@ -14042,9 +14042,12 @@ html {
     white-space: nowrap;
 }
 
-.badge-admin {
-    background: #212529;
-    color: #fff;
+.weekly-admin-label {
+    color: #6c757d;
+    font-size: 0.68em;
+    font-weight: 500;
+    margin-left: 0.2rem;
+    vertical-align: middle;
 }
 
 .badge-workshop {
