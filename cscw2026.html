@@ -104,7 +104,7 @@
                             <div class="fs-4 fw-light text-muted mb-4">
                                 Workshop Date: October 10th, 2026
                                 <span class="d-block fs-6 mt-1">
-                                    (Application Deadline: August <del>3rd</del> 7th, 2026 — extended)
+                                    (Applications accepted on a rolling basis)
                                 </span>
                             </div>
 
@@ -519,7 +519,7 @@
                             <a class="btn btn-primary px-4 py-3" href="https://forms.gle/qjw7Rc7rFPMhW8Py8"
                                 target="_blank">
 
-                                Submit by Aug. 7th
+                                Submit Application
 
                             </a>
 
@@ -568,22 +568,14 @@
                                 </p>
 
                                 <p>
-                                    <strong>Application Deadline:</strong>
-                                    August <del>3rd</del> 7th, 2026 (extended)
+                                    <strong>Application Deadline:</strong> Rolling, as space allows
                                 </p>
 
                                 <p>
-                                    <strong>**</strong> If travel or funding constraints prevented you from submitting by the
-                                    deadline, please feel free to reach out to any of the
-                                    <a href="#organizers">workshop organizers</a> or email JaeWon Kim at
-                                    <button class="btn btn-link border-0 p-0 align-baseline" type="button"
-                                        id="copyOrganizerEmail" data-email-user="jaewonk" data-email-domain="uw.edu"
-                                        aria-label="Copy JaeWon Kim's email address" aria-describedby="copyEmailStatus">
-                                        <span>jaewonk at uw.edu</span>
-                                        <i class="bi bi-clipboard ms-1" aria-hidden="true"></i>
-                                    </button>
-                                    <span class="small text-success ms-1" id="copyEmailStatus" role="status"
-                                        aria-live="polite"></span>.
+                                    <strong>**</strong> Given that travel to the U.S. may be complicated this year and
+                                    funding constraints may affect participation, we are accepting applications on a
+                                    rolling basis as space allows. Please feel free to submit until the application
+                                    form closes.
                                 </p>
 
                                 <p>
@@ -634,40 +626,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="js/scripts.js"></script>
-
-    <script>
-        const copyOrganizerEmailButton = document.getElementById("copyOrganizerEmail");
-        const copyEmailStatus = document.getElementById("copyEmailStatus");
-
-        if (copyOrganizerEmailButton && copyEmailStatus) {
-            copyOrganizerEmailButton.addEventListener("click", async () => {
-                const email = `${copyOrganizerEmailButton.dataset.emailUser}@${copyOrganizerEmailButton.dataset.emailDomain}`;
-
-                try {
-                    if (navigator.clipboard && window.isSecureContext) {
-                        await navigator.clipboard.writeText(email);
-                    } else {
-                        const temporaryInput = document.createElement("textarea");
-                        temporaryInput.value = email;
-                        temporaryInput.setAttribute("readonly", "");
-                        temporaryInput.style.position = "fixed";
-                        temporaryInput.style.opacity = "0";
-                        document.body.appendChild(temporaryInput);
-                        temporaryInput.select();
-                        document.execCommand("copy");
-                        temporaryInput.remove();
-                    }
-
-                    copyEmailStatus.textContent = "Copied!";
-                    window.setTimeout(() => {
-                        copyEmailStatus.textContent = "";
-                    }, 2500);
-                } catch (error) {
-                    copyEmailStatus.textContent = "Unable to copy";
-                }
-            });
-        }
-    </script>
 
 </body>
 
