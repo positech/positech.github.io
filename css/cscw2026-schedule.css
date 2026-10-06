@@ -1,0 +1,178 @@
+/* Keep the workshop schedule in the visual language of the 2026 page. */
+#schedule {
+    scroll-margin-top: 2rem;
+}
+
+#schedule .schedule-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#schedule .schedule-draft {
+    color: #495057;
+    font-size: .8rem;
+    padding: .35rem .75rem;
+    border: 1px solid #dee2e6;
+    border-radius: 2rem;
+}
+
+#schedule .schedule-session {
+    overflow: hidden;
+}
+
+#schedule .schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 0;
+    font-size: .925rem;
+}
+
+#schedule .schedule-table th,
+#schedule .schedule-table td {
+    padding: 1.15rem 2rem;
+    vertical-align: top;
+    border: 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+#schedule .schedule-table thead th {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    color: #495057;
+    background: #fff;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+#schedule .schedule-table th:first-child {
+    width: 10.75rem;
+    padding-right: .5rem;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+}
+
+#schedule .schedule-table tbody th {
+    background: transparent;
+    font-size: .85rem;
+    font-weight: 500;
+    padding-top: 1.3rem;
+}
+
+#schedule .schedule-table tr:last-child > * {
+    border-bottom: 0;
+}
+
+#schedule summary {
+    display: flex;
+    gap: .65rem;
+    cursor: pointer;
+    list-style: none;
+    margin-left: -1.35rem;
+    border-radius: .25rem;
+}
+
+#schedule summary::-webkit-details-marker {
+    display: none;
+}
+
+#schedule summary:hover strong {
+    color: #1e3ef3;
+}
+
+#schedule summary:focus-visible {
+    outline: 2px solid #1e3ef3;
+    outline-offset: 5px;
+}
+
+#schedule .schedule-chevron {
+    color: #1e3ef3;
+    font-size: 1.5rem;
+    line-height: 1;
+    height: 1.5rem;
+    flex: 0 0 .7rem;
+    text-align: center;
+}
+
+#schedule details[open] .schedule-chevron {
+    transform: rotate(90deg);
+}
+
+#schedule .schedule-prompts {
+    margin-top: 1rem;
+    border-top: 1px solid #dee2e6;
+    padding-top: 1rem;
+    max-width: 76ch;
+    line-height: 1.75;
+}
+
+#schedule .schedule-prompts ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#schedule .schedule-prompts li + li {
+    margin-top: .75rem;
+}
+
+#schedule .schedule-break {
+    background: #f8f9fa;
+}
+
+@media (max-width: 767.98px) {
+    #schedule .schedule-table th,
+    #schedule .schedule-table td {
+        padding: 1rem 1.2rem;
+    }
+
+    #schedule .schedule-table th:first-child {
+        width: 7.5rem;
+        padding-left: 1.2rem;
+        font-size: .75rem;
+    }
+
+}
+
+@media (max-width: 575.98px) {
+    #schedule .schedule-table thead {
+        display: none;
+    }
+
+    #schedule .schedule-table,
+    #schedule .schedule-table tbody,
+    #schedule .schedule-table tr,
+    #schedule .schedule-table th,
+    #schedule .schedule-table td {
+        display: block;
+        width: 100%;
+    }
+
+    #schedule .schedule-table tr {
+        border-bottom: 1px solid #e9ecef;
+        padding: 1rem 1.2rem 1rem 1.8rem;
+    }
+
+    #schedule .schedule-table tr:last-child {
+        border-bottom: 0;
+    }
+
+    #schedule .schedule-table th:first-child {
+        width: auto;
+        padding: 0 0 .5rem;
+        border: 0;
+        color: #495057;
+    }
+
+    #schedule .schedule-table td {
+        border: 0;
+        padding: 0;
+    }
+
+    #schedule summary {
+        gap: .4rem;
+        margin-left: -1.1rem;
+    }
+
+}
